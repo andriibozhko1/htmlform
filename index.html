@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FORM</title>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+	<div class="form">
+		<form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="POST">
+			<div class="header">
+				<h1>Personal Information</h1>
+			</div>
+			<div class="perso-info">
+					<fieldset>
+						<legend>Personal Info</legend>
+						    <label>Surname:<input type="text" name="surname" required><br><br></label>
+						<label>Name: <input type="text" name="name"></label><br><br>
+						<label>How old are You?: <input type="text" size="3" class="old" name="age"></label><br><br>
+						<label>Full Date of birth: <input type="date" name="birthday"></label><br><br>
+						<label>I accept the terms of the agreement:<input type="checkbox" name="accept the terms of the agreement"></label><br><br>
+					</fieldset>
+			</div>
+			<div class="registration">
+					<fieldset>
+						<legend>Registration</legend>
+						<label>E-mail: <input type="email" placeholder="example@gmail.com" name="email"></label><br><br>
+						<label>Password: <input type="password" minlength="6" maxlength="25" name="password"></label><br><br>
+					</fieldset>
+			</div>
+			<div class="about">
+				<fieldset>
+					<legend>An interesting fact about you!</legend>
+					<span>Do you love Cats?</span><br><br>
+					<label><input type="radio" name="cats">Yes</label><br><br>
+					<label><input type="radio" name="cats">No</label><br><br>
+					<label>What is your favorite color?:<br> <input type="color" name="favorite color"></label><br><br>
+					<label>What time do you go to bed? <br><input type="time" name="time when i go to sleep"></label><br><br>
+					<label>What you favorite brands of cars?<br>
+						<select name="cars">
+						<option>BMW</option>
+						<option>Audi</option>
+						<option>Lada</option>
+					</select><br><br>
+					<label>How do you rate our work?<br><br><input type="range" value="40" name="rate our work"></label>
+				</fieldset>
+			</div>
+			<div class="comment">
+				<fieldset>
+					<legend>Your comments:</legend>
+					<textarea cols="30" rows="3" placeholder="Comments" name="comments"></textarea>
+				</fieldset>
+			</div>
+			<input type="submit">
+		</form>
+	</div>
+	<script src="../LiveReload.js"></script>
+</body>
+</html>
